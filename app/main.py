@@ -57,7 +57,9 @@ def order_detail(row):
     order = as_dict(row)
     if order["priority"] == "express":
         placed_at = datetime.fromisoformat(order["created_at"])
-        estimated_at = placed_at.replace(day=placed_at.day + 2)
+        # Use timedelta so month/year boundaries are handled correctly
+        # (replace(day=day+2) fails near month end, e.g. express-1002).
+        estimated_at = placed_at + timedelta(days=2)
         order["estimated_delivery"] = estimated_at.date().isoformat()
     return order
 

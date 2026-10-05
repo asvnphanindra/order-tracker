@@ -1,0 +1,819 @@
+{
+  "traces": [
+    {
+      "traceID": "d0fb332aaf25e866d325c4b0fd5ef70e",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223004821097205",
+      "durationMs": 3,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "b090cf9fb536abcb",
+            "startTimeUnixNano": "1791223004821621210",
+            "durationNanos": "827964",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "70c17eb18f044f38",
+            "startTimeUnixNano": "1791223004821097205",
+            "durationNanos": "3349576",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "b090cf9fb536abcb",
+              "startTimeUnixNano": "1791223004821621210",
+              "durationNanos": "827964",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "70c17eb18f044f38",
+              "startTimeUnixNano": "1791223004821097205",
+              "durationNanos": "3349576",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "f5c6dcbb52b36ecdd389945a81412fe2",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223004173521234",
+      "durationMs": 3,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "8de577c0d76d3346",
+            "startTimeUnixNano": "1791223004174088630",
+            "durationNanos": "834826",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "7d3ff4a9e78d522f",
+            "startTimeUnixNano": "1791223004173521234",
+            "durationNanos": "3426871",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "8de577c0d76d3346",
+              "startTimeUnixNano": "1791223004174088630",
+              "durationNanos": "834826",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "7d3ff4a9e78d522f",
+              "startTimeUnixNano": "1791223004173521234",
+              "durationNanos": "3426871",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "fc44611ae93d5452fbdb6fcb8875b321",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223003506820999",
+      "durationMs": 4,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "4b04c0fd48ffc4a2",
+            "startTimeUnixNano": "1791223003508307551",
+            "durationNanos": "699746",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "0c179837fc4bcb68",
+            "startTimeUnixNano": "1791223003506820999",
+            "durationNanos": "4438781",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "4b04c0fd48ffc4a2",
+              "startTimeUnixNano": "1791223003508307551",
+              "durationNanos": "699746",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "0c179837fc4bcb68",
+              "startTimeUnixNano": "1791223003506820999",
+              "durationNanos": "4438781",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "f79dd95a019e3dbad85f6bbcf7f63dac",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223002840579479",
+      "durationMs": 4,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "0febccbae10e03a3",
+            "startTimeUnixNano": "1791223002841096789",
+            "durationNanos": "820719",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "24c6bfe49cd1508e",
+            "startTimeUnixNano": "1791223002840579479",
+            "durationNanos": "4316603",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "0febccbae10e03a3",
+              "startTimeUnixNano": "1791223002841096789",
+              "durationNanos": "820719",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "24c6bfe49cd1508e",
+              "startTimeUnixNano": "1791223002840579479",
+              "durationNanos": "4316603",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "13fd73a61c23a31df89bf7ecf10c5e39",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223002188320075",
+      "durationMs": 4,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "2d4281a7a2423254",
+            "startTimeUnixNano": "1791223002189085895",
+            "durationNanos": "664131",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "5cef66039064e9d0",
+            "startTimeUnixNano": "1791223002188320075",
+            "durationNanos": "4238792",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "2d4281a7a2423254",
+              "startTimeUnixNano": "1791223002189085895",
+              "durationNanos": "664131",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "5cef66039064e9d0",
+              "startTimeUnixNano": "1791223002188320075",
+              "durationNanos": "4238792",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "28fea0e20bb241614daf7cece2563b92",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223001528826822",
+      "durationMs": 3,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "c55ec0a4b2d4f314",
+            "startTimeUnixNano": "1791223001529332879",
+            "durationNanos": "801260",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "a331eed1462f9d77",
+            "startTimeUnixNano": "1791223001528826822",
+            "durationNanos": "3459828",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "c55ec0a4b2d4f314",
+              "startTimeUnixNano": "1791223001529332879",
+              "durationNanos": "801260",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "a331eed1462f9d77",
+              "startTimeUnixNano": "1791223001528826822",
+              "durationNanos": "3459828",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "6d4e19dc2ee849a4daa37df8a227ad19",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223000861757174",
+      "durationMs": 4,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "af2d65880446b821",
+            "startTimeUnixNano": "1791223000862522292",
+            "durationNanos": "1241766",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "1563cef7b3449860",
+            "startTimeUnixNano": "1791223000861757174",
+            "durationNanos": "4981445",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "af2d65880446b821",
+              "startTimeUnixNano": "1791223000862522292",
+              "durationNanos": "1241766",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "1563cef7b3449860",
+              "startTimeUnixNano": "1791223000861757174",
+              "durationNanos": "4981445",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    },
+    {
+      "traceID": "9b3a576f5c446c682b167b6e51940ee1",
+      "rootServiceName": "order-tracker",
+      "rootTraceName": "GET /api/orders/{order_id}",
+      "startTimeUnixNano": "1791223000161050080",
+      "durationMs": 41,
+      "spanSet": {
+        "spans": [
+          {
+            "spanID": "d9b97262850b61e5",
+            "startTimeUnixNano": "1791223000164010628",
+            "durationNanos": "5592607",
+            "attributes": [
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              },
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              }
+            ]
+          },
+          {
+            "spanID": "f83f0f312b909ce1",
+            "startTimeUnixNano": "1791223000161050080",
+            "durationNanos": "41252753",
+            "attributes": [
+              {
+                "key": "service.name",
+                "value": {
+                  "stringValue": "order-tracker"
+                }
+              },
+              {
+                "key": "status",
+                "value": {
+                  "stringValue": "error"
+                }
+              }
+            ]
+          }
+        ],
+        "matched": 2
+      },
+      "spanSets": [
+        {
+          "spans": [
+            {
+              "spanID": "d9b97262850b61e5",
+              "startTimeUnixNano": "1791223000164010628",
+              "durationNanos": "5592607",
+              "attributes": [
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                }
+              ]
+            },
+            {
+              "spanID": "f83f0f312b909ce1",
+              "startTimeUnixNano": "1791223000161050080",
+              "durationNanos": "41252753",
+              "attributes": [
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "order-tracker"
+                  }
+                },
+                {
+                  "key": "status",
+                  "value": {
+                    "stringValue": "error"
+                  }
+                }
+              ]
+            }
+          ],
+          "matched": 2
+        }
+      ],
+      "serviceStats": {
+        "order-tracker": {
+          "spanCount": 4,
+          "errorCount": 2
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "inspectedBytes": "438535",
+    "totalBlocks": 1,
+    "completedJobs": 4,
+    "totalJobs": 4,
+    "totalBlockBytes": "63109"
+  }
+}

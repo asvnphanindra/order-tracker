@@ -130,14 +130,26 @@ def run_agent(incident_dir: Path, evidence: dict) -> dict:
     prompt = build_prompt(incident_dir, evidence)
 
     try:
-        result = subprocess.run(
-            command,
-            cwd=REPO_DIR,
-            input=prompt,
-            text=True,
-            capture_output=True,
-            timeout=900,
-        )
+        # On Windows, npm shims are .cmd files and need shell execution.
+        if os.name == "nt":
+            result = subprocess.run(
+                subprocess.list2cmdline(command),
+                cwd=REPO_DIR,
+                input=prompt,
+                text=True,
+                capture_output=True,
+                timeout=900,
+                shell=True,
+            )
+        else:
+            result = subprocess.run(
+                command,
+                cwd=REPO_DIR,
+                input=prompt,
+                text=True,
+                capture_output=True,
+                timeout=900,
+            )
     except Exception as exc:
         if is_test:
             return _write_test_response(incident_dir, evidence)

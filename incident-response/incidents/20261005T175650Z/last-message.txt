@@ -1,0 +1,10 @@
+Root cause:
+Express delivery date used placed_at.replace(day=placed_at.day + 2).
+When the order was placed near month end (express-1002 seed data), day+2
+does not exist in that month, so datetime.replace raises and the API returns 500.
+
+Fix:
+Changed app/main.py order_detail() to use placed_at + timedelta(days=2).
+Added regression test test_express_order_near_month_end.
+
+The express delivery date calculation tried to use a day that does not exist in that month.

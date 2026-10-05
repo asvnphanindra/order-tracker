@@ -1,0 +1,8 @@
+Agent note: Codex CLI was not authenticated on this host, so the coding agent in
+the homework session applied the fix from the collected incident evidence.
+
+Root cause: express estimated delivery used replace(day=day+2), which fails near
+month boundaries for seeded express-1002.
+
+Fix applied in app/main.py using timedelta(days=2).
+Verification: rebuild container and GET /api/orders/express-1002 -> 200.

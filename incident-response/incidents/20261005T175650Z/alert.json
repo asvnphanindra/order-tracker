@@ -1,0 +1,33 @@
+{
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alertname": "OrderTracker5xx",
+        "grafana_folder": "Order Tracker",
+        "http_route": "/api/orders/{order_id}",
+        "severity": "critical"
+      },
+      "annotations": {
+        "dashboard_url": "http://localhost:3000/d/order-tracker-observability?viewPanel=2",
+        "endpoint": "/api/orders/{order_id}",
+        "summary": "5xx responses on /api/orders/{order_id} in the last 2 minutes",
+        "window": "2m"
+      },
+      "startsAt": "2026-10-05T17:56:50Z",
+      "endsAt": "0001-01-01T00:00:00Z",
+      "generatorURL": "http://localhost:3000/alerting/grafana/order-tracker-5xx/view?orgId=1",
+      "fingerprint": "0864e5dfc4da1103",
+      "silenceURL": "http://localhost:3000/alerting/silence/new?alertmanager=grafana&matcher=__alert_rule_uid__%3Dorder-tracker-5xx&matcher=http_route%3D%2Fapi%2Forders%2F%7Border_id%7D&matcher=severity%3Dcritical&orgId=1",
+      "dashboardURL": "http://localhost:3000/d/order-tracker-observability?from=1791219410000&orgId=1&to=1791223010025",
+      "panelURL": "http://localhost:3000/d/order-tracker-observability?from=1791219410000&orgId=1&to=1791223010025&viewPanel=2",
+      "values": {
+        "A": 6.9144000000000005,
+        "B": 6.9144000000000005,
+        "C": 1
+      },
+      "valueString": "[ var='A' labels={http_route=/api/orders/{order_id}} value=6.9144000000000005 ], [ var='B' labels={http_route=/api/orders/{order_id}} value=6.9144000000000005 ], [ var='C' labels={http_route=/api/orders/{order_id}} value=1 ]",
+      "orgId": 1
+    }
+  ]
+}

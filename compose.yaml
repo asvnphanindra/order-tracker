@@ -92,6 +92,8 @@ services:
       - ./observability/grafana/dashboards:/var/lib/grafana/dashboards/order-tracker:ro
     ports:
       - "127.0.0.1:${GRAFANA_PORT:-3000}:3000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       prometheus:
         condition: service_started

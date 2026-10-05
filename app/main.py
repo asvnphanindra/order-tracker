@@ -9,6 +9,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
+from app.telemetry import record_order_lookup, setup_telemetry
+
 
 DB_PATH = Path(os.getenv("ORDER_DB_PATH", "data/orders.db"))
 STATUSES = {"received", "preparing", "shipped", "delivered"}
@@ -71,7 +73,8 @@ class StatusUpdate(BaseModel):
 
 
 @asynccontextmanager
-async def lifespan(_app: FastAPI):
+async def lifespan(application: FastAPI):
+    setup_telemetry(application)
     init_db()
     yield
 
@@ -103,8 +106,15 @@ def get_order(order_id: str):
     with connect() as db:
         row = db.execute("SELECT * FROM orders WHERE id = ?", (order_id,)).fetchone()
     if row is None:
+        record_order_lookup(order_id=order_id, status_code=404)
         raise HTTPException(404, "Order not found")
-    return order_detail(row)
+    try:
+        order = order_detail(row)
+    except Exception:
+        record_order_lookup(order_id=order_id, status_code=500)
+        raise
+    record_order_lookup(order_id=order_id, status_code=200)
+    return order
 
 
 @app.post("/api/orders", status_code=201)

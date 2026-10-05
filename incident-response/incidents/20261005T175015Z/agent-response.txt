@@ -1,0 +1,6 @@
+Used local test responder because the coding agent CLI was unavailable.
+Responder test notification received.
+Alert: ResponderTest
+Summary: Test notification; no incident to fix
+There is no real incident to investigate.
+No fix is required.
